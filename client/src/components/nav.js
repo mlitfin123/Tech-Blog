@@ -1,32 +1,63 @@
-import React from 'react';
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from 'react';
+import { Link, useLocation } from "react-router-dom";
 
 const Nav = () => {
-    return (
-        <nav class="navbar navbar-expand-lg navbar-dark bg-light">
-        <span class="navbar-brand text-dark font-weight-bold" ><Link to={"./"}>Fit to Tech</Link></span>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <span  class="nav-link text-dark"><Link to={"./"}>Blog</Link></span>
+
+    let location = useLocation();
+
+    const [activePage, setActivePage] = useState('');
+
+    useEffect(() => {
+        
+        switch (location.pathname) {
+            case '/':
+                setActivePage('blog');
+            break;
+            case '/products':
+                setActivePage('products');
+            break;
+            case '/services':
+                setActivePage('services');
+            break;
+            case '/about':
+                setActivePage('about');
+            break;
+            case '/contact':
+                setActivePage('contact');
+            break;
+            default: 
+                setActivePage('/');
+            break;
+    }
+}, [location.pathname]);
+
+return (
+    <nav className="navbar navbar-expand-md">
+        <Link id="navHead" onClick={() => setActivePage('blog')} className={activePage === 'blog' ? 'nav-link active' : 'nav-link'} to="/"><h2>Fit To Tech</h2></Link>
+        <button className="navbar-toggler navbar-light bg-light" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNav">
+            <ul className="navbar-nav">
+                <li className="nav-item">
+                    <Link id="navHead" onClick={() => setActivePage('blog')} className={activePage === 'blog' ? 'nav-link active' : 'nav-link'} to="/">Blog</Link>
                 </li>
-                <li class="nav-item">
-                    <span class="nav-link text-dark"><Link to={"./about"}>About Me</Link></span>
+                <li className="nav-item">
+                    <Link id="navHead" onClick={() => setActivePage('products')} className={activePage === 'products' ? 'nav-link active' : 'nav-link'} to="/products">Products</Link>
                 </li>
-                <li class="nav-item">
-                    <span class="nav-link text-dark"><Link to={"./contact"}>Contact</Link></span>
+                <li className="nav-item">
+                    <Link id="navHead" onClick={() => setActivePage('services')} className={activePage === 'services' ? 'nav-link active' : 'nav-link'} to="/services">Services</Link>
                 </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"></input>
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
-            </div>
+                <li className="nav-item">
+                    <Link id="navHead" onClick={() => setActivePage('about')} className={activePage === 'about' ? 'nav-link active' : 'nav-link'} to="/about">Mission</Link>
+                </li>
+                <li className="nav-item">
+                    <Link id="navHead" onClick={() => setActivePage('contact')} className={activePage === 'contact' ? 'nav-link active' : 'nav-link'} to="/contact">Contact</Link>
+                </li>
+            </ul>
+        </div>
     </nav>
-    )
+    );
 }
 
 export default Nav;

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import post from '../data/posts.json';
 
-const Home = () => {
+const Blog = () => {
     
     const [postState, setPostState] = useState([]);
 
@@ -28,8 +28,8 @@ const Home = () => {
                 </h3>
             
                 <div class="blog-post">
-                <h2 class="blog-post-title">Getting Started with Bootcamp</h2>
-                <p class="blog-post-meta">November 20, 2020 by <a href="/about">Mark</a></p>
+                <h2 class="blog-post-title"><Link to={"./nov112020"}>Getting Started with Bootcamp</Link></h2>
+                <p class="blog-post-meta">November 20, 2020 by <Link to={"./about"}>Mark</Link></p>
                 </div>
                 <p>
         </p>
@@ -70,4 +70,4 @@ const Home = () => {
     )
 }
 
-export default Home;
+export default Blog;
