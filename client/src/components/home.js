@@ -16,8 +16,9 @@ const Blog = () => {
         <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
             <div class="col-md-6 px-0">
                 <h1 class="display-4 font-italic">Getting Started with Bootcamp</h1>
-                <p class="lead my-3">####</p>
-                <p class="lead mb-0"><span class="text-white font-weight-bold"><Link to={"./nov112020"}>Continue reading...</Link></span></p>
+                <p class="lead my-3">The story of how I decided to take a coding bootcamp probably began like many others. I had graduated from a University years ago in a completely unrelated field that I was going nowhere fast in, I had always had a little interest in technology but never studied it, I had heard just how much money you could make as a programmer which really caught my attention, and I tried real hard to learn programming on my own with not much success.
+                I spent about 4 years attempting to learn programming on and off on my own, however I started with zero experience in programming so I had no idea....</p>
+                <p class="lead mb-0"><span class="text-white font-weight-bold"><Link to={"./jan112021"}>Continue reading...</Link></span></p>
             </div>
             </div>    
             <main role="main" class="container">
@@ -28,8 +29,8 @@ const Blog = () => {
                 </h3>
             
                 <div class="blog-post">
-                <h2 class="blog-post-title"><Link to={"./nov112020"}>Getting Started with Bootcamp</Link></h2>
-                <p class="blog-post-meta">November 20, 2020 by <Link to={"./about"}>Mark</Link></p>
+                <h2 class="blog-post-title"><Link to={"./jan112021"}>Getting Started with Bootcamp</Link></h2>
+                <p class="blog-post-meta">January 11, 2021 by <Link to={"./about"}>Mark Litfin</Link></p>
                 </div>
                 <p>
         </p>
@@ -49,18 +50,14 @@ const Blog = () => {
                 <div class="p-4">
                 <h4 class="font-italic">Archives</h4>
                 <ol class="list-unstyled mb-0">
-                    <li><Link to={"./nov2020"}>November 2020</Link></li>
+                    <li><Link to={"./jan2021"}>January 2021</Link></li>
                 </ol>
             </div>
         
             <div class="p-4">
                 <h4 class="font-italic">Elsewhere</h4>
                 <ol class="list-unstyled">
-                    <li><a href="https://github.com/mlitfin123" target="_blank">GitHub</a></li>
-                    <li><a href="https://www.instagram.com/marklifting/" target="_blank">Instagram</a></li>
-                    <li><a href="https://www.facebook.com/mark.litfin5" target="_blank">Facebook</a></li>
-                    <li><a href="https://www.linkedin.com/in/mark-litfin-b132bb67/" target="_blank">LinkedIn</a></li>
-                    <li><a href="https://marksfolio.herokuapp.com/" target="_blank">Portfolio</a></li>
+                    <li><a href="https://litgamers.org/" target="_blank">LitGamers</a></li>
                 </ol>
                 </div>
             </aside>

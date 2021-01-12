@@ -6,8 +6,15 @@ const About = () => {
         <div class="jumbotron p-4 p-md-2 text-white rounded bg-dark">
             <h1>About Me</h1>
         </div>
+            <ul>
+                <li><a href="https://github.com/mlitfin123" target="_blank">GitHub</a></li>
+                <li><a href="https://www.instagram.com/marklifting/" target="_blank">Instagram</a></li>
+                <li><a href="https://www.facebook.com/mark.litfin5" target="_blank">Facebook</a></li>
+                <li><a href="https://www.linkedin.com/in/mark-litfin-b132bb67/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://marksfolio.herokuapp.com/" target="_blank">Portfolio</a></li>
+            </ul>
         <hr/>
-        <p> My name is Mark Litfin. I am an IT professional and aspiring Software Developer. 
+        <p className="blogBody"> My name is Mark Litfin. I am an IT professional and aspiring Software Developer. 
             My personal and professional journey has brought me through many different avenues to get to this point. 
             When I was younger I had strong interests in getting into computer programming, 
             mainly for game development, after taking one computer programming class in high school 
@@ -36,8 +43,8 @@ const About = () => {
             the simplest of tasks so I decided to take the plunge and enter a coding bootcamp to take the next step in my development knowledge.
             So here I am, still a student in this bootcamp and here creating a blog from scratch to document my journey both for my own benefit
             and for anybody else who might be in a similar situation as me. </p><br></br>
-        <img src="assets/images/Arcade.jpg" alt="Me" width="300" height="400"></img>
-        <img src="assets/images/selfie.jpg" alt="Me" width="220" height="400"></img>
+        <img className="selfIMG" src="assets/images/Arcade.jpg" alt="Me" width="300" height="400"></img>
+        <img className="selfIMG" src="assets/images/selfie.jpg" alt="Me" width="220" height="400"></img>
         </main>
     )
 }

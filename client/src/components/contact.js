@@ -19,7 +19,9 @@ const Contact = () => {
         <main>
             <div class="row">
                 <div class="col">
-                    <h1 className="title">Contact</h1>
+                    <div class="jumbotron p-4 p-md-2 text-white rounded bg-dark text-center">
+                        <h1>Contact</h1>
+                    </div>
                     <form className="contact-form" onSubmit={sendEmail}>
                         <label>Name:</label>
                         <div className="form-group">

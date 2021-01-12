@@ -19,8 +19,8 @@ const Nav = () => {
             case '/services':
                 setActivePage('services');
             break;
-            case '/about':
-                setActivePage('about');
+            case '/mission':
+                setActivePage('mission');
             break;
             case '/contact':
                 setActivePage('contact');
@@ -32,15 +32,16 @@ const Nav = () => {
 }, [location.pathname]);
 
 return (
+    <div>
+    <Link id="navHead" onClick={() => setActivePage('blog')} className={activePage === 'blog' ? 'nav-link active' : 'nav-link'} to="/"><h2>Fit-To-Tech Technologies</h2></Link>
     <nav className="navbar navbar-expand-md">
-        <Link id="navHead" onClick={() => setActivePage('blog')} className={activePage === 'blog' ? 'nav-link active' : 'nav-link'} to="/"><h2>Fit To Tech</h2></Link>
         <button className="navbar-toggler navbar-light bg-light" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
                 <li className="nav-item">
-                    <Link id="navHead" onClick={() => setActivePage('blog')} className={activePage === 'blog' ? 'nav-link active' : 'nav-link'} to="/">Blog</Link>
+                    <Link id="navHead" onClick={() => setActivePage('blog')} className={activePage === 'blog' ? 'nav-link active' : 'nav-link'} to="/">Articles</Link>
                 </li>
                 <li className="nav-item">
                     <Link id="navHead" onClick={() => setActivePage('products')} className={activePage === 'products' ? 'nav-link active' : 'nav-link'} to="/products">Products</Link>
@@ -49,7 +50,7 @@ return (
                     <Link id="navHead" onClick={() => setActivePage('services')} className={activePage === 'services' ? 'nav-link active' : 'nav-link'} to="/services">Services</Link>
                 </li>
                 <li className="nav-item">
-                    <Link id="navHead" onClick={() => setActivePage('about')} className={activePage === 'about' ? 'nav-link active' : 'nav-link'} to="/about">Mission</Link>
+                    <Link id="navHead" onClick={() => setActivePage('mission')} className={activePage === 'mission' ? 'nav-link active' : 'nav-link'} to="/mission">Mission</Link>
                 </li>
                 <li className="nav-item">
                     <Link id="navHead" onClick={() => setActivePage('contact')} className={activePage === 'contact' ? 'nav-link active' : 'nav-link'} to="/contact">Contact</Link>
@@ -57,6 +58,7 @@ return (
             </ul>
         </div>
     </nav>
+    </div>
     );
 }
 

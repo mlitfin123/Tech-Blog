@@ -1,4 +1,3 @@
-
 html
 {
   height:100%;
@@ -14,6 +13,11 @@ header{
 
 .form-top{
   margin-top: 30px;
+}
+.contact-form {
+  padding: 10px;
+  border: 4px solid black;
+  text-align:center;
 }
 .panel{
   box-shadow: 0 1px 6px 0 rgba(0,0,0,.12), 0 1px 6px 0 rgba(0,0,0,.12);
@@ -33,10 +37,31 @@ header{
 .navbar-nav{
   padding-left: 10px;
 }
+#navHead{
+  float: left;
+}
+.title {
+  text-align: center;
+}
+.postLabel {
+  padding-top: 5px;
+}
+
+.selfIMG {
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+.blogBody {
+  padding: 10px;
+}
+.blogTitle {
+  padding-left: 10px;
+}
 
 #banner {
   min-height: 60px;
   border-bottom: 4px solid #5e2626;
+  padding: 15px;
 }
   #banner h1 {
     color: #5e2626;
@@ -57,7 +82,7 @@ header{
   #banner nav .navbar-nav {
     max-width: 455px;
     margin: 0 auto; 
-    font-size: 18px;
+    font-size: 20px;
   }
   #banner nav .navbar-nav .nav-link {
     color: white;
