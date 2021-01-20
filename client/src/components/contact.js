@@ -6,7 +6,7 @@ const Contact = () => {
     function sendEmail(e) {
         e.preventDefault();
     
-        emailjs.sendForm('service_s2e1vlm', 'template_ns2ubq2', e.target, 'user_F50HIjhG7V6zUkMAsw8UL')
+        emailjs.sendForm('service_s2e1vlm', 'template_nc6k0qa', e.target, 'user_F50HIjhG7V6zUkMAsw8UL')
             .then((result) => {
                 console.log(result.text);
                 alert("Thanks for your email, we will respond shortly")
@@ -17,11 +17,13 @@ const Contact = () => {
         }
     return (
         <main>
-            <div class="row">
-                <div class="col">
-                    <div class="jumbotron p-4 p-md-2 text-white rounded bg-dark text-center">
-                        <h1>Contact</h1>
+            <div class="jumbotron p-4 p-md-2 text-white rounded bg-dark text-center">
+                <h1>Contact</h1>
+            </div>
+                <div className="row">
+                    <div className="col">
                     </div>
+                <div className="col-11">
                     <form className="contact-form" onSubmit={sendEmail}>
                         <label>Name:</label>
                         <div className="form-group">
@@ -44,6 +46,8 @@ const Contact = () => {
                             <input type="submit" value="Send" />
                         </div>
                     </form>
+                    </div>
+                <div className="col">
                 </div>
             </div>
         </main>

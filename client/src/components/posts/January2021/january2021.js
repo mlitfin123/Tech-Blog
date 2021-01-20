@@ -8,19 +8,19 @@ const Jan2021= () => {
                     <h1>January 2021</h1>
                 </div>
                 <table class="table">
-                        <tbody>
-                            <tr>
-                            <td>
-                                <div id="sauce" className="games">
-                                <Link to={"./jan112021"}><img src="assets/images/posts/jan11post.jpg" alt="bootcamp" width="300" height="200"></img>
-                                    <h4 className="postLabel">Getting Started with Bootcamp</h4><p>January 11, 2021</p></Link>
-                                </div>
-                            </td>
-                            </tr>
-                            <tr>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <tbody>
+                        <tr>
+                        <td>
+                            <div>
+                            <Link to={"./jan112021"}><img src="assets/images/posts/jan11post.jpg" alt="bootcamp" width="300" height="200"></img>
+                                <h4 className="postLabel">Getting Started with Bootcamp</h4><p>January 11, 2021</p></Link>
+                            </div>
+                        </td>
+                        </tr>
+                        <tr>
+                        </tr>
+                    </tbody>
+                </table>
             </main>
 
     )
