@@ -12,11 +12,11 @@ const About = () => {
                 <div className="col-11">
                 <div class="nav justify-content-center">
             <ul>
-                <a className="links" href="https://github.com/mlitfin123" target="_blank">GitHub</a>
-                <a className="links" href="https://www.instagram.com/marklifting/" target="_blank">Instagram</a>
-                <a className="links" href="https://www.facebook.com/mark.litfin5" target="_blank">Facebook</a>
-                <a className="links" href="https://www.linkedin.com/in/mark-litfin-b132bb67/" target="_blank">LinkedIn</a>
-                <a className="links" href="https://marksfolio.herokuapp.com/" target="_blank">Portfolio</a>
+                <a className="links" href="https://github.com/mlitfin123" target="_blank" rel="noreferrer">GitHub</a>
+                <a className="links" href="https://www.instagram.com/marklifting/" target="_blank" rel="noreferrer">Instagram</a>
+                <a className="links" href="https://www.facebook.com/mark.litfin5" target="_blank" rel="noreferrer">Facebook</a>
+                <a className="links" href="https://www.linkedin.com/in/mark-litfin-b132bb67/" target="_blank" rel="noreferrer">LinkedIn</a>
+                <a className="links" href="https://marksfolio.herokuapp.com/" target="_blank" rel="noreferrer">Portfolio</a>
             </ul>
             </div>
             </div>

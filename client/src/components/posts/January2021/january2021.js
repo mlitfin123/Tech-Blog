@@ -12,8 +12,14 @@ const Jan2021= () => {
                         <tr>
                         <td>
                             <div>
-                            <Link to={"./jan112021"}><img src="assets/images/posts/jan11post.jpg" alt="bootcamp" width="300" height="200"></img>
-                                <h4 className="postLabel">Getting Started with Bootcamp</h4><p>January 11, 2021</p></Link>
+                                <Link to={"./jan272021"}><h4 className="postLabel">Building Your First React Web Application</h4>
+                                <img src="\assets\images\posts\jan27post.jpg" alt="React" width="300" height="200"></img>
+                                <p>January 27, 2021</p></Link>
+                            </div>
+                            <div>
+                                <Link to={"./jan112021"}><h4 className="postLabel">Getting Started with Bootcamp</h4>
+                                <img src="assets/images/posts/jan11post.jpg" alt="Bootcamp" width="300" height="200"></img>
+                                <p>January 11, 2021</p></Link>
                             </div>
                         </td>
                         </tr>

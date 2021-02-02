@@ -13,7 +13,7 @@ const Products = () => {
                     <div className="card-body">
                         <p className="card-text">A collection of simple but challenging games available to play for free or for pay to compete 
                             against other users for an opportunity to win cash.</p>
-                        <a href="https://litgamers.org" target="_blank" className="btn btn-primary">View Website</a>
+                        <a href="https://litgamers.org" target="_blank" rel="noreferrer" className="btn btn-primary">View Website</a>
                     </div>
                 </div>
             </div>
