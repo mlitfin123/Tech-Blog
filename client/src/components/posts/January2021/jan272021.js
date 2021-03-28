@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Jan272021 = () => {
+    document.title = "Building Your First React Web Application"
     return (
         <main >
         <div className="jumbotron p-4 p-md-2 text-white rounded bg-dark">

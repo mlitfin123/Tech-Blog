@@ -2,17 +2,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Blog = () => {
+    document.title = "Fit-to-Tech"
 
     return (
         <div>
         <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
             <div class="col-md-6 px-0">
-                <h1 class="display-4 font-italic">Building Your First React Web Application</h1>
-                <p class="lead my-3">When I first started using React.Js I had no idea what it was, it was confusing to me but I knew if I typed certain code 
-                    and performed certain actions I could easily get a server running locally and a web page displayed on my computer. 
-                    It worked with so much more ease than I was used to in coding that it turned into my go-to method of creating webpages and web applications. 
-                    So what is React.Js?....</p>
-                <p class="lead mb-0"><span class="text-white font-weight-bold"><Link to={"./jan272021"}>Continue reading...</Link></span></p>
+                <h1 class="display-4 font-italic">Deploying Your Website with Firebase</h1>
+                <p class="lead my-3">....</p>
+                <p class="lead mb-0"><span class="text-white font-weight-bold"><Link to={"./mar292021"}>Continue reading...</Link></span></p>
             </div>
             </div>    
             <main role="main" class="container">
@@ -22,16 +20,26 @@ const Blog = () => {
                 Earlier this Year
                 </h3>
                 <div class="blog-post">
-                    <Link to={"./jan272021"}><h2 class="blog-post-title">Building Your First React Web Application</h2><img src="\assets\images\posts\jan27post.jpg" alt="react" width="300" height="200"></img></Link>
+                    <Link to={"./loops"}><h2 class="blog-post-title">Deploying Your Website with Firebase</h2><img src="\assets\images\posts\mar29post.jpg" alt="firebase" width="300" height="200"></img></Link>
+                    <p class="blog-post-meta">March 29, 2021 by <Link to={"./about"}>Mark Litfin</Link></p>
+                </div>
+                <div class="blog-post">
+                    <Link to={"./loops"}><h2 class="blog-post-title">Creating Your First Loop with JavaScript</h2><img src="\assets\images\posts\mar19post.jpg" alt="loops" width="300" height="200"></img></Link>
+                    <p class="blog-post-meta">March 19, 2021 by <Link to={"./about"}>Mark Litfin</Link></p>
+                </div>
+                <div class="blog-post">
+                    <Link to={"./react1"}><h2 class="blog-post-title">Building Your First React Web Application</h2><img src="\assets\images\posts\jan27post.jpg" alt="react" width="300" height="200"></img></Link>
                     <p class="blog-post-meta">January 27, 2021 by <Link to={"./about"}>Mark Litfin</Link></p>
                 </div>
                 <div class="blog-post">
-                    <Link to={"./jan112021"}><h2 class="blog-post-title">Getting Started with Bootcamp</h2><img src="assets/images/posts/jan11post.jpg" alt="bootcamp" width="300" height="200"></img></Link>
+                    <Link to={"./bootcamp"}><h2 class="blog-post-title">Getting Started with Bootcamp</h2><img src="assets/images/posts/jan11post.jpg" alt="bootcamp" width="300" height="200"></img></Link>
                     <p class="blog-post-meta">January 11, 2021 by <Link to={"./about"}>Mark Litfin</Link></p>
                 </div>
                 <nav class="blog-pagination">
                 <span class="btn btn-outline-primary">Older</span>
                 <span class="btn btn-outline-secondary disabled" tabindex="-1" aria-disabled="true">Newer</span>
+                <br></br>
+                <br></br>
                 </nav>
             
             </div>
@@ -45,6 +53,7 @@ const Blog = () => {
                 <div class="p-4">
                 <h4 class="font-italic">Archives</h4>
                 <ol class="list-unstyled mb-0">
+                    <li><Link to={"./mar2021"}>March 2021</Link></li>
                     <li><Link to={"./jan2021"}>January 2021</Link></li>
                 </ol>
             </div>

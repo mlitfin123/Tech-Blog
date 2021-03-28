@@ -2,6 +2,7 @@ import React from 'react';
 import emailjs from 'emailjs-com';
 
 const Contact = () => {
+    document.title = "Fit-to-Tech"
 
     function sendEmail(e) {
         e.preventDefault();
