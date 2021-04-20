@@ -40,7 +40,7 @@ const Mar192021= () => {
                     "while", and "do/while" loops which is why I'm sticking with just those 3 to talk about in this current article for the time being.
                     <br></br>
                     <br></br>
-                    <h4 className="loops">For Loop</h4>
+                    <h4 className="blog-headers">For Loop</h4>
                     It comes as no surprise that my favorite loop to use is the first one I learned. I feel the most comfortable with the "for" loop. Here is an 
                     example: 
                     <br></br>
@@ -57,7 +57,7 @@ const Mar192021= () => {
                     less than the number specified. The next part of the loop is the variable name "i" with an additional "++" which instructs the variable to increment by 1 
                     each time the loop runs. The last part of a "for" loop is the function you want to run each time the loop iterates through. In this case the loop 
                     simply creates a console.log that increments the number each time.
-                    <h4 className="loops">While Loop</h4>
+                    <h4 className="blog-headers">While Loop</h4>
                     The "while" loop is a statement that continually executes as long a a specified condition is true. Here is an example:
                     <br></br>
                     <br></br>
@@ -68,7 +68,7 @@ const Mar192021= () => {
                     value of "0". After declaring these variables you will then create the loop which in this example means while "n" is less than "5" it will continue to run. The next 
                     section of the loop is "n++" which means that each time the loop runs the value of "n" will increase by one. The last section of this loop is "x += n" which means the 
                     value of "x" will be increased by the value of "n" each time through the loop.
-                    <h4 className="loops">Do/While Loop</h4>
+                    <h4 className="blog-headers">Do/While Loop</h4>
                     The "do...while" loop is very similar to the previous loops talked about. This loop will continue doing a specified action while the specified condition is true, but will 
                     break once it becomes false. Take a look at the following example:
                     <br></br>
@@ -79,12 +79,12 @@ const Mar192021= () => {
                     To begin this loop the variable "i" is declared with a value of "0". The "do" portion of the loop simply tells the value of "i" to increment by 1 each time through the loop and 
                     console.log the current number according to which time through the loop it is. This will keep running as long as the number is less than 5. This type of loop is useful when trying 
                     to execute multiple actions based on a single condition.
-                    <h4 className="loops">Break Statement</h4>
+                    <h4 className="blog-headers">Break Statement</h4>
                     Everything I have talked about with loops before now has been taking the assumption that your loop will eventually reach a point that the condition you specified is false. This is 
                     very important to avoid an infinite loop. However there is another way you can terminate your loop within the code you have written. By entering a "break" statement as a part of one of 
                     your conditions the loop will terminate once it is true. An example would be if you have the loop running continuously or if you have a loop running to a specific number but want to stop it 
                     early on another condition you can write an "if" something equals to true then "break" within the loop.
-                    <h4 className="loops">Continue Statement</h4>
+                    <h4 className="blog-headers">Continue Statement</h4>
                     In contrast to the "break" statement there also exists in JavaScript the "continue" statement. This statement was honestly a little confusing to me at first because of the name it was given, 
                     but that's why I wanted to include it here. The "continue" statement can be used to restart a loop that is already in progress. For example as the loop is counting numbers you can add an "if" 
                     statement to have the loop restart once the variable equals 3. When I first came across this statement I kept thinking in my mind why is this needed? The loop is already running, why would you 

@@ -10,7 +10,7 @@ const Blog = () => {
             <div class="col-md-6 px-0">
                 <h1 class="display-4 font-italic">Deploying Your Website with Firebase</h1>
                 <p class="lead my-3">....</p>
-                <p class="lead mb-0"><span class="text-white font-weight-bold"><Link to={"./mar292021"}>Continue reading...</Link></span></p>
+                <p class="lead mb-0"><span class="text-white font-weight-bold"><Link to={"./firebase"}>Continue reading...</Link></span></p>
             </div>
             </div>    
             <main role="main" class="container">
@@ -20,7 +20,7 @@ const Blog = () => {
                 Earlier this Year
                 </h3>
                 <div class="blog-post">
-                    <Link to={"./loops"}><h2 class="blog-post-title">Deploying Your Website with Firebase</h2><img src="\assets\images\posts\mar29post.jpg" alt="firebase" width="300" height="200"></img></Link>
+                    <Link to={"./firebase"}><h2 class="blog-post-title">Deploying Your Website with Firebase</h2><img src="\assets\images\posts\mar29post.jpg" alt="firebase" width="300" height="200"></img></Link>
                     <p class="blog-post-meta">March 29, 2021 by <Link to={"./about"}>Mark Litfin</Link></p>
                 </div>
                 <div class="blog-post">
