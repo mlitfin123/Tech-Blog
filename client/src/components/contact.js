@@ -17,7 +17,7 @@ const Contact = () => {
             });
         }
     return (
-        <main>
+        <main id="contact">
             <div class="jumbotron p-4 p-md-2 text-white rounded bg-dark text-center">
                 <h1>Contact</h1>
             </div>

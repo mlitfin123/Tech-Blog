@@ -113,6 +113,8 @@ const Jan272021 = () => {
                     <br></br>
                     Congratulations!! You now have a simple two page web react application! Keep up to date with my future posts to find out more of what you can do with react. There are so many additional tools react offers which will open up many new 
                     opportunities in your web development journey.
+
+                    Check out the next post on react <Link to={"./reactloops"}>Looping with React JS</Link>.
                 </p>
                 </div>
                 <div className="col">

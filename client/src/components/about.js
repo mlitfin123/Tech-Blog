@@ -1,6 +1,7 @@
 import React from 'react';
 
 const About = () => {
+    document.title = "Fit-to-Tech"
     return (
         <main>
         <div class="jumbotron p-4 p-md-2 text-white rounded bg-dark">

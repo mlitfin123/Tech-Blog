@@ -3,7 +3,7 @@ import React from 'react';
 const Products = () => {
     document.title = "Fit-to-Tech"
     return (
-        <main>
+        <main id="products">
             <div className="jumbotron p-4 p-md-2 text-white rounded bg-dark">
                 <h1>Products</h1>
             </div>

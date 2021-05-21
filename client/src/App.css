@@ -141,3 +141,32 @@ header{
   padding-top: 10px;
   padding-bottom: 5px;
 }
+footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  border-top: 1px solid black;
+  padding-bottom: 10px;
+}
+.footer-content{
+  font-size: 10px;
+  color: black;
+}
+#services {
+  padding-bottom: 300px;
+}
+#products {
+  padding-bottom: 300px;
+}
+#mission {
+  padding-bottom: 300px;
+}
+#contact {
+  padding-bottom: 50px;
+}
+.container {
+  padding-bottom: 20px;
+}

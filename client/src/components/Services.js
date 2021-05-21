@@ -3,7 +3,7 @@ import React from 'react';
 const Services = () => {
     document.title = "Fit-to-Tech"
     return (
-        <main>
+        <main id="services">
             <div class="jumbotron p-4 p-md-2 text-white rounded bg-dark">
                 <h1>Services</h1>
             </div>

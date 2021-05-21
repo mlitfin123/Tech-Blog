@@ -8,20 +8,26 @@ const Blog = () => {
         <div>
         <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
             <div class="col-md-6 px-0">
-                <h1 class="display-4 font-italic">Deploying Your Website with Firebase</h1>
-                <p class="lead my-3">....</p>
-                <p class="lead mb-0"><span class="text-white font-weight-bold"><Link to={"./firebase"}>Continue reading...</Link></span></p>
+                <h1 class="display-4 font-italic">Looping with React JS</h1>
+                <p class="lead my-3">In the JSX code of React JS loops can be so different than what you're used to in a lot of programming languages that I thought it deserved its 
+                    own post. One of the most often actions I take while creating applications in React JS is to take an array of objects and loop through them 
+                    to add them to a web pa</p>
+                <p class="lead mb-0"><span class="text-white font-weight-bold"><Link to={"./reactloops"}>Continue reading...</Link></span></p>
             </div>
             </div>    
-            <main role="main" class="container">
+            <main role="main" className="container">
             <div class="row">
             <div class="col-md-8 blog-main">
                 <h3 class="pb-4 mb-4 font-italic border-bottom">
                 Earlier this Year
                 </h3>
-                <div class="blog-post">
+                {/* <div class="blog-post">
                     <Link to={"./firebase"}><h2 class="blog-post-title">Deploying Your Website with Firebase</h2><img src="\assets\images\posts\mar29post.jpg" alt="firebase" width="300" height="200"></img></Link>
                     <p class="blog-post-meta">March 29, 2021 by <Link to={"./about"}>Mark Litfin</Link></p>
+                </div> */}
+                <div class="blog-post">
+                    <Link to={"./reactloops"}><h2 class="blog-post-title">Looping with React JS</h2><img src="\assets\images\posts\may21\florian-olivo-4hbJ-eymZ1o-unsplash.jpg" alt="reactloops" width="300" height="200"></img></Link>
+                    <p class="blog-post-meta">May 21, 2021 by <Link to={"./about"}>Mark Litfin</Link></p>
                 </div>
                 <div class="blog-post">
                     <Link to={"./loops"}><h2 class="blog-post-title">Creating Your First Loop with JavaScript</h2><img src="\assets\images\posts\mar19post.jpg" alt="loops" width="300" height="200"></img></Link>
@@ -53,6 +59,7 @@ const Blog = () => {
                 <div class="p-4">
                 <h4 class="font-italic">Archives</h4>
                 <ol class="list-unstyled mb-0">
+                    <li><Link to={"./may2021"}>May 2021</Link></li>
                     <li><Link to={"./mar2021"}>March 2021</Link></li>
                     <li><Link to={"./jan2021"}>January 2021</Link></li>
                 </ol>
